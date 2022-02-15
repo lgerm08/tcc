@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  Sn: 9.99
+  U1N: 9.99
+  U2N: 9.99
+  rT: 9.99
+  ZT: 9.99
+  Pferro: 9.99
+  Pcu: 9.99
+
+two:
+  name: MyString
+  Sn: 9.99
+  U1N: 9.99
+  U2N: 9.99
+  rT: 9.99
+  ZT: 9.99
+  Pferro: 9.99
+  Pcu: 9.99

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Turbs</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Pmin</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @turbs.each do |turb| %>
+      <tr>
+        <td><%= turb.name %></td>
+        <td><%= turb.Pmin %></td>
+        <td><%= link_to 'Show', turb %></td>
+        <td><%= link_to 'Edit', edit_turb_path(turb) %></td>
+        <td><%= link_to 'Destroy', turb, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Turb', new_turb_path %>

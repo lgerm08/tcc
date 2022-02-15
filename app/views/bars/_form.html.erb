@@ -1,0 +1,38 @@
+<%= form_with(model: bar) do |form| %>
+  <% if bar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bar.errors.count, "error") %> prohibited this bar from being saved:</h2>
+
+      <ul>
+        <% bar.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field mb-3">
+    <%= form.label :name, class:"form-label" %>
+    <%= form.text_field :name, class:"form-text" %>
+  </div>
+  
+
+  <div class="field mb-3">
+    <%= form.label :trafo, class:"form-label"  %>
+    <%= collection_select(:bar, :trafo_id, Trafo.all, :id, :name, prompt:true) %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :turb, class:"form-label"  %>
+    <%= collection_select(:bar, :turb_id, Turb.all, :id, :name, prompt:true)%>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :gen, class:"form-label"  %>
+    <%= collection_select(:bar, :gen_id, Gen.all, :id, :name, prompt:true) %>
+  </div>
+
+  <div class="actions btn btn-primary">
+    <%= form.submit 'Salvar barramento', :class=>"btn btn-primary" %>
+  </div>
+<% end %>

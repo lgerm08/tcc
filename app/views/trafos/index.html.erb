@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Trafos</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sn</th>
+      <th>U1n</th>
+      <th>U2n</th>
+      <th>Rt</th>
+      <th>Zt</th>
+      <th>Pferro</th>
+      <th>Pcu</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trafos.each do |trafo| %>
+      <tr>
+        <td><%= trafo.name %></td>
+        <td><%= trafo.Sn %></td>
+        <td><%= trafo.U1N %></td>
+        <td><%= trafo.U2N %></td>
+        <td><%= trafo.rT %></td>
+        <td><%= trafo.ZT %></td>
+        <td><%= trafo.Pferro %></td>
+        <td><%= trafo.Pcu %></td>
+        <td><%= link_to 'Show', trafo %></td>
+        <td><%= link_to 'Edit', edit_trafo_path(trafo) %></td>
+        <td><%= link_to 'Destroy', trafo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trafo', new_trafo_path %>

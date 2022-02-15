@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  PF: 9.99
+  SN: 9.99
+  UN: 9.99
+  If0: 9.99
+  Uf0: 9.99
+  Ifn: 9.99
+  Ufn: 9.99
+  Xd: 9.99
+  Xq: 9.99
+  ra: 9.99
+  Pferro: 9.99
+  Pmec: 9.99
+  Psup: 9.99
+  Pven: 9.99
+  k_exm: 9.99
+  k_prl: 9.99
+
+two:
+  name: MyString
+  PF: 9.99
+  SN: 9.99
+  UN: 9.99
+  If0: 9.99
+  Uf0: 9.99
+  Ifn: 9.99
+  Ufn: 9.99
+  Xd: 9.99
+  Xq: 9.99
+  ra: 9.99
+  Pferro: 9.99
+  Pmec: 9.99
+  Psup: 9.99
+  Pven: 9.99
+  k_exm: 9.99
+  k_prl: 9.99

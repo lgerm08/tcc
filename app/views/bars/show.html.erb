@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bar.name %>
+</p>
+<p>
+  <strong>Transformador:</strong>
+  <%= @bar.trafo.name %>
+</p>
+<p>
+  <strong>Turbina</strong>
+  <%= @bar.turb.name %>
+</p>
+<p>
+  <strong>Gerador</strong>
+  <%= @bar.gen.name %>
+</p>
+
+<%= link_to 'Edit', edit_bar_path(@bar) %> |
+<%= link_to 'Back', bars_path %>

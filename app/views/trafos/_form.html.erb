@@ -1,0 +1,57 @@
+<%= form_with(model: trafo) do |form| %>
+  <% if trafo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trafo.errors.count, "error") %> prohibited this trafo from being saved:</h2>
+
+      <ul>
+        <% trafo.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Sn %>
+    <%= form.text_field :Sn %>
+  </div>
+
+  <div class="field">
+    <%= form.label :U1N %>
+    <%= form.text_field :U1N %>
+  </div>
+
+  <div class="field">
+    <%= form.label :U2N %>
+    <%= form.text_field :U2N %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rT %>
+    <%= form.text_field :rT %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ZT %>
+    <%= form.text_field :ZT %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Pferro %>
+    <%= form.text_field :Pferro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Pcu %>
+    <%= form.text_field :Pcu %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
